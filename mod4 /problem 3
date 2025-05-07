@@ -1,0 +1,2 @@
+balance = float(input("balance:"))
+print(balance < 100)
