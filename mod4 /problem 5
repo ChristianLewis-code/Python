@@ -1,0 +1,6 @@
+order_total = float(input("order total"))
+if order_total < 50:
+  total_cost = order_total + 5
+else:
+  total_cost = order_total
+print("Total cost:", total_cost)
