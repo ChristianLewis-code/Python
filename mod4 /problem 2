@@ -1,0 +1,6 @@
+sensor_value = int(input("daylight sensor"))
+
+if sensor_value < 8:
+  print("Headlights On")
+else:
+  print("headlights Off")
