@@ -9,4 +9,5 @@ while current <= n:
   current += 1
 
 print("The sum from 1 to", n, "is", total)
-  
+
+# i accidentally put a space before print at the end, it took awhile for me to figure out what was wrong
