@@ -1,0 +1,8 @@
+words = ["olympic", "college", "does", "not", "have", "olympic", "games"]
+count = 0
+
+for word in words:
+    if word == "olympic":
+        count += 1
+
+print("olympic appearances:", count)
