@@ -1,0 +1,7 @@
+numbers = [3,6,9,12]
+squares = []
+
+for num in numbers:
+  squares.append(num ** 2)
+
+print("Squared numbers:", squares)
