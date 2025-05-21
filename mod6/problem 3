@@ -1,0 +1,8 @@
+words = ["sun", "at", "horizon", "of", "destruction", "for",]
+filtered = []
+
+for word in words:
+    if len(word) > 3:
+        filtered.append(word)
+
+print("Filtered list (length > 3):", filtered)
