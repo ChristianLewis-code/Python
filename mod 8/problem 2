@@ -1,0 +1,13 @@
+while True:
+    hike_name = input("Enter hike name (or 0 to exit): ")
+    if hike_name == "0":
+        break
+    distance = input("Enter distance in miles: ")
+    
+    with open("hiking_log.txt", "a") as file:
+        file.write(f"{hike_name} - {distance} miles\n")
+
+print("\nHiking Log:")
+with open("hiking_log.txt", "r") as file:
+    for line in file:
+        print(line.strip())
