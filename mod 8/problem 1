@@ -1,0 +1,8 @@
+with open("gardening_tips.txt", "w") as file:
+    file.write("Water plants when they are dry.\n")
+    file.write("use better soil, topping or compost.\n")
+    file.write("cut off dead leaves.\n")
+
+with open("gardening_tips.txt", "r") as file:
+    for line in file:
+        print(line.strip())
