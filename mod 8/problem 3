@@ -1,13 +1,11 @@
 with open("song_lyrics.txt", "r") as file:
     lyrics = file.read().lower()
 
-# Get 5 words to count
 words_to_count = []
 for i in range(5):
     word = input(f"Word {i+1} to count: ").lower()
     words_to_count.append(word)
 
-# Count frequencies
 word_counts = {}
 for word in words_to_count:
     count = lyrics.count(word)
