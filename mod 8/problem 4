@@ -1,0 +1,24 @@
+def counting(filename):
+    
+    with open(filename, "r") as file:
+        content = file.read().lower().strip()
+
+    votes = content.split(",")
+
+    vote_counts = {
+        "yea": 0,
+        "nay": 0
+    }
+
+    for vote in votes:
+        vote = vote.strip()
+        if vote in vote_counts:
+            vote_counts[vote] += 1
+        else:
+            print(f"Ignored unrecognized vote: '{vote}'")
+
+    return vote_counts
+
+results = counting("polls.txt")
+print("Yea votes:", results["yea"])
+print("Nay votes:", results["nay"])
